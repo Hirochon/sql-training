@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  sql-training:
+    image: mysql:8.0.29
+    environment:
+      - MYSQL_USER
+      - MYSQL_ROOT_PASSWORD
+      - MYSQL_PASSWORD
+      - MYSQL_DATABASE
+    ports:
+      - 3306:3306
+    volumes:
+      - ./tmp/config:/etc/mysql/conf.d
