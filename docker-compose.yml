@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   sql-training:
-    image: mysql:8.0.29
+    build: .
     environment:
       - MYSQL_USER
       - MYSQL_ROOT_PASSWORD
